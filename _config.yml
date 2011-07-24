@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://iannopollo.com
+title: Steve Iannopollo
+subtitle: freelance software developer for ruby on rails, javascript, and objective c
+author: Steve Iannopollo
 simple_search: http://google.com/search
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
@@ -38,7 +38,7 @@ recent_posts: 5 # Posts in the sidebar Recent Posts section
 # ----------------------- #
 
 # Twitter
-twitter_user:
+twitter_user: siannopollo
 twitter_tweet_count: 4
 twitter_show_replies: false
 twitter_follow_button: true
