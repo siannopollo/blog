@@ -8,7 +8,7 @@ comments: true
 categories: 
 ---
 
-I recently found myself needing to submit my new application [Tick](/mac/tick) to the Mac App Store. I figured "No problem! I've already gone through the iPhone app submission process, I'm sure this will be eerily similar." Well, yes and no.
+I recently found myself needing to submit my new application [Tick](/apps/mac/tick) to the Mac App Store. I figured "No problem! I've already gone through the iPhone app submission process, I'm sure this will be eerily similar." Well, yes and no.
 
 <!--more-->
 

@@ -1,2 +1,26 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+article img {
+  background-color: #fff;
+}
+
+#app_listing {
+  app {
+    display: block;
+    a {
+      vertical-align: text-top;
+      font-size: 2.2em;
+      img {
+        display: inline;
+        vertical-align: text-top;
+        height: 64px;
+        width: 64px;
+        border-width: 1px;
+        border-color: transparent;
+        background-color: transparent;
+        margin-right: 0.4em;
+      }
+    }
+  }
+}
