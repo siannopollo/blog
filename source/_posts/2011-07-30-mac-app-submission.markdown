@@ -1,11 +1,10 @@
 ---
 layout: post
 title: "Mac App Submission"
-subtitle: "The nitty gritty on submitting an app to the Mac App Store"
 date: 2011-07-30 11:20
 sharing: true
 comments: true
-categories: 
+categories: mac apps
 ---
 
 I recently found myself needing to submit my new application [Tick](/apps/mac/tick) to the Mac App Store. I figured "No problem! I've already gone through the iPhone app submission process, I'm sure this will be eerily similar." Well, yes and no.
