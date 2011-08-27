@@ -5,6 +5,11 @@ article img {
   background-color: #fff;
 }
 
+p.subtitle {
+  color: #333;
+  @extend .sans;
+}
+
 #app_listing {
   app {
     display: block;
@@ -22,5 +27,34 @@ article img {
         margin-right: 0.4em;
       }
     }
+  }
+}
+
+#project_listing {
+  project {
+    a {
+      vertical-align: baseline;
+      &.icon {
+        float: left;
+        padding-bottom: 1em;
+        img {
+          width: 200px;
+          margin-right: 1em;
+          margin-bottom: 0;
+        }
+      }
+    }
+    
+    h2 {
+      font-size: 1.8em;
+      margin: 0 0 0.2em;
+      padding: 0;
+    }
+    
+    display: block;
+    padding-top: 10px;
+    margin-top: 15px;
+    border-bottom: solid 1px #ddd;
+    &:last-child {border: none;}
   }
 }
