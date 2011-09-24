@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Zerply"
+date: 2011-09-24 01:19
+comments: true
+sharing: true
+categories: networking zerply
+---
+
+I was recently informed by my tweeps of a new (at least new to me) service called [Zerply](http://zerply/.com). Weird name, but a cool site nonetheless.
+
+<!-- more -->
+
+Zerply seems to be, more or less, a service like LinkedIn. It allows you to present your professional persona to prospective employers or co-workers. You do pretty much the same stuff as on LinkedIn: bio, experience, education, skills, a network of contacts.
+
+The thing that I really like about Zerply, in fact, the reason for this post, is the great design of the site. It is a well thought out, well-designed application. For LinkedIn, I think most people can agree that it is cluttered and unattractive. And the more I come to appreciate good design in everything (including websites), the more I enjoy using well designed websites and the more I _dislike_ using ugly ones.
+
+So, go check it out. Here's my [profile](http://zerp.ly/siannopollo), and if you decide to sign up feel free to use my [referral link](http://zerp.ly/i/qNb0b). I really hope Zerply does well and makes using professional networking tools enjoyable.
