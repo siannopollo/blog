@@ -12,7 +12,7 @@ Jekyll::Site.class_eval do
         page.to_liquid['url'].sub('index.html', '') =~ /^\/apps\/iphone\/.+?/
       end
       result['site']['mac_pages'] = self.pages.select do |page|
-        page.to_liquid['url'].sub('index.html', '') =~ /^\/apps\/mac\/.+?/
+        page.to_liquid['url'].sub('index.html', '') =~ /^\/apps\/mac\/.+?/ && page.data.has_key?('app')
       end
     end
   end
