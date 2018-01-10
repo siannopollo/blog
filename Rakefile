@@ -72,6 +72,7 @@ task :new_post, :title do |t, args|
     post.puts "comments: true"
     post.puts "categories: "
     post.puts "---"
+    post.puts "[opening blurb]\n\n<!--more-->\n\n"
   end
 end
 

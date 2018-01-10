@@ -5,7 +5,7 @@ date: 2018-01-08 16:26
 comments: true
 categories: blog-reboot crptocurrency monero bitcoin
 ---
-Yet again, another person drags out their old blog from the depths of the interwebs and proclaims: "I'm going to start using this thing again!"
+Yet again somebody drags out their old blog from the depths of the interwebs and proclaims: "I'm going to start using this thing again!"
 
 <!--more-->
 
