@@ -5,29 +5,18 @@ module Jekyll
       
       parts = markup.to_s.split ' '
       @src = parts.shift
-      
-      credit_parts, caption_parts = [], []
-      parts.each do |part|
-        if credit_parts.last =~ /"\Z/
-          caption_parts << part
-        else
-          credit_parts << part
-        end
-      end
-      @credit = credit_parts.join(' ').gsub '"', ''
-      @caption = caption_parts.join ' '
-      @credit, @caption = parts.join(' ').split(' | ')
+      @credit, @caption = parts.join(' ').split ' | '
     end
     
     def render(context)
       root_url = context.registers[:site].config['root'].sub(/\/$/, '')
-      src = "#{root_url}/#{@src}"
+      @src = "#{root_url}/#{@src}" unless @src =~ /\Ahttp/
       
-      caption = %{<div class="caption">#{@caption}</div>} unless @caption.empty?
+      caption = %{<div class="caption">#{@caption}</div>} if @caption && !@caption.empty?
       
       %{<div class="credited-image">
         <div class="credited-image-inner">
-          <img src="#{src}">
+          <img src="#{@src}">
           <div class="credit">credit: #{@credit}</div>
           #{caption}
         </div>

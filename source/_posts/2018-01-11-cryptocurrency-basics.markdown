@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cryptocurrency Basics"
-date: 2018-01-09 19:35
+date: 2018-01-11 20:12
 comments: true
 categories: crptocurrency monero bitcoin cryptocurrency-fundamentals
 ---
@@ -19,7 +19,7 @@ I think everyone has a pretty decent grasp on what currency is: a medium of exch
 
 {% credited_image images/blog/us-bills.png Wikipedia | So I guess Ben Franklin is an honorary president according to the money...? %}
 
-While I love small colored pieces of paper as much as the next guy, I only hold a special place in my heart for Federal Reserve Notes simply because I know I can trade them at a later time to get the things I really want. Like ice cream.
+While I love small colored pieces of paper as much as the next guy, I only hold a special place in my heart for Federal Reserve Notes simply because I know I can trade them at a later time to get the things I really want, like ice cream.
 
 Currency can be pretty much anything as long as all the parties involved agree that what they are exchanging has some value. That value can be intrinsic (like gold or silver coins), or it can just be the value that people have placed in the currency knowing that sometime in the future the currency can be traded for something with intrinsic value. When all is said and done it doesn't really matter _what_ people use as a currency. People have used copper, silver, and gold for millenia, but other examples include seemingly worthless things like seashells or beads. The list of what people have used historically as currency is far too long for this post.
 
@@ -46,19 +46,30 @@ Quite a bit of planning and paperwork had to go into building this level of trus
 
 That is where cryptography comes in.
 
-Cryptography in it's simplest form is a way to scramble the contents of a message so that only the sender and intended recipient(s) know the contents of the message. The basics of cryptography are beyond the scope of this post, but there are some good resources to be had [here](https://blockgeeks.com/guides/cryptocurrencies-cryptography) and [here](https://www.virtru.com/blog/encryption-basics).
-
 {% credited_image images/blog/little-orphan-annie-decoder-ring.jpg Flickriver,The Retro-Spector | Little Orphan Annie duping children into drinking more Ovaltine, colorized, cir. 1940 %}
 
+Cryptography in it's simplest form is a way to scramble the contents of a message so that only the sender and intended recipient(s) know the contents of the message. The basics of cryptography are beyond the scope of this post, but there are some good resources to be had [here](https://blockgeeks.com/guides/cryptocurrencies-cryptography), [here](http://practicalcryptography.com) and [here](https://www.virtru.com/blog/encryption-basics).
 
+Even the basics can get complicated, so I'll try to keep this as simple and abstract as possible.
 
-Instead of the store and credit card company, let's switch to using Boris and Juanita. Boris owns an online store specializing in the sale of the dankest fidget spinners around. Juanita is a fidget spinner aficionado of the highest caliber.
+Cryptocurrencies are a purely digital product. While [physical manifestations](https://www.coindesk.com/10-physical-bitcoins-good-bad-ugly/) of cryptocurrencies exist they are merely tokens that point to the digital form. Being digital has some drawbacks, authenticity being a major one.
 
+If I want to transfer 1 Bitcoin to Boris I can't just send Boris an email saying he now has 1 more Bitcoin that he used to. I need to create a Bitcoin transaction to properly send my Bitcoin to Boris.
 
+This transaction isn't just a plain text note authorizing Boris to claim 1 Bitcoin from me. If it were, what's to prevent Boris from changing 1 Bitcoin to 2? What's to stop me from reversing the transaction, instead claiming that _I_ now own 1 of Boris' Bitcoins? What's to stop a 3rd party from altering the transaction and claiming that my Bitcoin instead goes to them?
 
+It now becomes apparent that we need to do something to ensure the authenticity of each transaction, and this is where we use cryptography. Specifically, [public key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography).
 
-Boris requires funds before he sends spinners out
-Juanita only has a caiman islands bank account
-Juanita needs to send Boris information about her caiman islands account so that funds can be released
-Both use insecure internet connections
-They need to use cryptography to transmit the sensitive data so that only Boris receives the information, no matter who else intercepts the encrypted message
+Instead of just posting a simple message about our transaction I can post the message and a _signature_ that only I can produce. I can use my private key to sign the message cryptographically based on the content of the message. This shows that I am the one (and only one) who posted the transaction, and because of the way public key cryptography works anyone with my public key can verify that my signed message is truly signed by me.
+
+Not only can I send this transaction message to Boris, but to all users of the cryptocurrency, all of whom are able to verify that the message is authentic and that the transaction is legitimate. Anyone can verify the transaction from now until the edge of eternity (or at least the death of the cryptocurrency).
+
+If anyone tried to forge my signature it would become evident to anyone with my public key that the signature does not go with the forged message, and thus the network of cryptocurrency users would reject the forged transaction.
+
+When we use cryptography to ensure the authenticity of transactions we no longer need to _trust_ that the sender of the message is who they say they are. We can prove it without a doubt, which removes trust from the equation altogether. While there are still a few concerns about trust (I'll get to those in later posts), for the most part cryptocurrencies remove a lot of the problems with trusting the other party in a given transaction.
+
+---
+
+While this is a very simplified explanation of the cryptography used in cryptocurrencies, it should give us a place to start from when we start learning more about cryptocurrencies and how they function, especially as we learn about Monero.
+
+If you notice an error in anything I've explained _please_ let me know in the comments. I'm learning this stuff as I go, and if I have something wrong then I really need to know that.
