@@ -3,7 +3,7 @@ layout: post
 title: "Cryptocurrency Basics"
 date: 2018-01-11 20:12
 comments: true
-categories: crptocurrency monero bitcoin cryptocurrency-fundamentals
+categories: crptocurrency monero bitcoin cryptocurrency-fundamentals monero-fundamentals
 ---
 Assuming we start from a base knowledge of nothing when it comes to cryptocurrency, where do we begin. Why, at the beginning, of course.
 
